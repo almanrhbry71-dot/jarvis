@@ -1,0 +1,12 @@
+{
+  "name": "jarvis-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local server for the Jarvis voice assistant page",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
