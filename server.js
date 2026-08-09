@@ -10,6 +10,10 @@ const app = express();
 app.use(express.json());
 app.use(express.static(__dirname));
 
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'jarvis.html'));
+});
+
 app.post('/api/chat', async (req, res) => {
   const apiKey = process.env.GROQ_API_KEY;
   if (!apiKey) {
